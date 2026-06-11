@@ -1,0 +1,6 @@
+@Senai_11._06._2026_HostAddress = http://localhost:5253
+
+GET {{Senai_11._06._2026_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
