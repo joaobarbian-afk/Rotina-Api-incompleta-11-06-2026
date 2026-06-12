@@ -142,3 +142,4 @@ C:\Users\436479624\Documents\Senai_11.06.2026\obj\Debug\net8.0\refint\Senai_11.0
 C:\Users\436479624\Documents\Senai_11.06.2026\obj\Debug\net8.0\Senai_11.06.2026.pdb
 C:\Users\436479624\Documents\Senai_11.06.2026\obj\Debug\net8.0\Senai_11.06.2026.genruntimeconfig.cache
 C:\Users\436479624\Documents\Senai_11.06.2026\obj\Debug\net8.0\ref\Senai_11.06.2026.dll
+C:\Users\436479624\Documents\Senai_11.06.2026\obj\Debug\net8.0\Senai_11.06.2026.sourcelink.json

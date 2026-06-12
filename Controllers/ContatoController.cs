@@ -21,20 +21,20 @@ namespace Senai_11._06._2026.Controllers
           new Contato {Id=2, Nome="Guilherme", Telefone="12345678910", Ativo= true},
           new Contato {Id=3, Nome="Leonardo", Telefone="10987654321", Ativo= false}
         };
+
+        [HttpGet]
         public IActionResult Lista()
         {
             return Ok(contatos);
-        }   
+        }
 
-        [HttpGet("{Id}")]
+        [HttpGet("{i    d}")]
         public IActionResult BuscarId(int id)
         {
             var contato = contatos.FirstOrDefault(c => c.Id == id);
 
             if (contato == null)
                 return NotFound();
-
-            contatos.Remove(contato);
 
             return Ok();
         }
@@ -49,27 +49,27 @@ namespace Senai_11._06._2026.Controllers
 
         public IActionResult Atualizar(int id, Contato contatoAtualizado)
         {
-            var contatos = contato.FirstOrDefault(p => p.Id = id);
+            var contato = contatos.FirstOrDefault(p => p.Id == id);
 
-            if (contatos == null)
+            if (contato == null)
                 return NotFound();
 
-            contatos.Nome = contatosAtualizado.Nome;
-            contatos.Telefone = contatosAtualizado.Telefone;
-            contatos.Ativo = contatosAtualizado.Ativo;
-            contatos.Id = contatosAtualizado.Id;
-            return OK(contatos);
+            contato.Nome = contatoAtualizado.Nome;
+            contato.Telefone = contatoAtualizado.Telefone;
+            contato.Ativo = contatoAtualizado.Ativo;
+            contato.Id = contatoAtualizado.Id;
+            return Ok(contato);
         }
         [HttpDelete("{id}")]
         public IActionResult Deletar(int id)
         {
-            var contatos = contatos.FirstOrDefault(c => p.Id == id);
+            var contato = contatos.FirstOrDefault(c => c.Id == id);
 
-            if (contatos == null)
+            if (contato == null)
                 return NotFound();
 
-            contatos.Remove(contatos);
-            return OK(contatos);
+            contatos.Remove(contato);
+            return Ok(contatos);
 
         }
     }
